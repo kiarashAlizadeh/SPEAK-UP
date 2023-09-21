@@ -4,7 +4,212 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./dist/css/main.css" />
+    <link
+      rel="shortcut icon"
+      href="./dist/images/icon.svg"
+      type="image/x-icon"
+    />
     <title>Speak Up</title>
   </head>
-  <body></body>
+  <body class="font-Poppins">
+    <!-- navBar with burger menu -->
+    <nav
+      class="relative px-4 py-4 flex justify-between items-center bg-white gap-x-2"
+    >
+      <div class="lg:hidden">
+        <button class="navbar-burger flex items-center text-blue-600 p-3">
+          <svg
+            class="block h-6 w-6 fill-current text-black"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Mobile menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </button>
+      </div>
+      <a
+        class="text-xl sm:text-3xl font-bold leading-none flex items-center gap-1"
+        href="#"
+      >
+        <img src="./dist/images/icon.svg" alt="" class="w-8 h-8 sm:w-12 sm:h-12"/>
+        <span class="text-primary">Speak Up</span>
+      </a>
+      <ul
+        class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6"
+      >
+        <li>
+          <a class="text-sm hover:text-slate-400 nav-active" href="#">Home</a>
+        </li>
+        <li>
+          <a class="text-sm hover:text-slate-400" href="#">Courses</a>
+        </li>
+        <li>
+          <a class="text-sm hover:text-slate-400" href="#">Contact us</a>
+        </li>
+        <li>
+          <a class="text-sm hover:text-slate-400" href="#">About us</a>
+        </li>
+      </ul>
+      <div class="flex md:gap-x-5 items-center">
+        <a
+          class="lg:ml-auto lg:mr-3 py-2 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold rounded-xl transition duration-200 hover:bg-slate-200"
+          href="#"
+          ><img src="./dist/images/nav/user.svg " alt=""
+        /></a>
+        <a
+          class="flex py-2 px-4 text-sm font-bold rounded-xl transition duration-200 hover:bg-slate-200"
+          href="#"
+          >EN <img src="./dist/images/nav/down-arrow.svg" alt=""
+        /></a>
+      </div>
+    </nav>
+    <div class="navbar-menu relative z-50 hidden">
+      <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+      <nav
+        class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto"
+      >
+        <div class="flex items-center mb-8">
+          <a class="mr-auto text-3xl font-bold leading-none" href="#">
+            <img src="./dist/images/icon.svg" alt="" />
+          </a>
+          <button class="navbar-close">
+            <svg
+              class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div>
+          <ul>
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                href="#"
+                >Courses</a
+              >
+            </li>
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                href="#"
+                >Contact us</a
+              >
+            </li>
+            <li class="mb-1">
+              <a
+                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                href="#"
+                >About us</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <a
+          class="flex py-2 px-4 text-sm font-bold rounded-xl transition duration-200 text-gray-400 hover:text-blue-600"
+          href="#"
+          >EN <img src="./dist/images/nav/down-arrow.svg" alt=""
+        /></a>
+        <div class="mt-auto">
+          <div class="pt-6">
+            <a
+              class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold bg-gray-50 hover:bg-gray-100 rounded-xl border-2 border-primary"
+              href="#"
+              >Sign in</a
+            >
+            <a
+              class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700 rounded-xl"
+              href="#"
+              >Sign Up</a
+            >
+          </div>
+          <p class="my-4 text-xs text-center text-gray-400">
+            <span>Copyright © 2023 SpeakUp</span>
+          </p>
+        </div>
+      </nav>
+    </div>
+
+    <!-- footer -->
+    <div
+      class="bg-gradient-to-b from-primary to-dark-primary fixed bottom-0 w-full"
+    >
+      <footer class="border-b-2 flex flex-col items-start p-5 text-white">
+        <div
+          class="flex items-center flex-wrap sm:justify-between w-full gap-5"
+        >
+          <span class="hidden lg:inline max-w-[258px]">
+            Fluency is nothing more than mastering the 100 most important
+            real-life conversations
+          </span>
+          <div class="flex gap-7">
+            <ul class="flex flex-col gap-1 items-start">
+              <li class="font-black mb-2">Speak up courses</li>
+              <li>Learn english</li>
+              <li>Learn Turkish</li>
+              <li>Learn French</li>
+            </ul>
+            <ul class="flex flex-col gap-1 items-start">
+              <li class="font-black mb-2">Products</li>
+              <li>Landing page</li>
+              <li>About us</li>
+              <li>Contact us</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-2">
+            <span class="mb-2 font-black">Contact information</span>
+            <a href="tel:+34933478486" class="flex gap-x-1"
+              ><img src="./dist/images/footer/phone.svg" alt="" />
+              +34933478486</a
+            >
+            <a href="mailto:Info@speakup.we" class="flex gap-x-1"
+              ><img src="./dist/images/footer/mail.svg" alt="" />
+              Info@speakup.we</a
+            >
+            <span class="flex gap-x-1"
+              ><img src="./dist/images/footer/location.svg" alt="" /> barcelona,
+              C/ de sardenya</span
+            >
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between mt-5 gap-x-3">
+          <img src="./dist/images/footer/facebook.svg" alt="" />
+          <img src="./dist/images/footer/linkdin.svg" alt="" />
+          <img src="./dist/images/footer/twitter.svg" alt="" />
+          <img src="./dist/images/footer/pinterest.svg" alt="" />
+        </div>
+      </footer>
+      <div
+        class="flex flex-wrap px-5 pt-5 pb-3 lg:justify-between text-white gap-y-3"
+      >
+        <span> 2023 Speakup. All Rights Reserved. </span>
+        <div class="flex gap-x-5">
+          <span>Terms & Conditions</span>
+          <span>Privacy Policy</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- burgerMenus script -->
+    <script src="./dist/js/burgerMenus.js"></script>
+  </body>
 </html>
