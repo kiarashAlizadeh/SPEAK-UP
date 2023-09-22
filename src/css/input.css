@@ -7,4 +7,9 @@
   .nav-active {
     @apply text-primary font-black hover:text-primary/60 !important;
   }
+  * {
+  @media only screen and (max-width: 386px) {
+    overflow-x: hidden;
+  }
+}
 }
