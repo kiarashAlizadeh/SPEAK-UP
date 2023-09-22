@@ -789,6 +789,10 @@ video {
   margin-top: auto;
 }
 
+.mt-4{
+  margin-top: 1rem;
+}
+
 .box-border{
   box-sizing: border-box;
 }
@@ -2813,24 +2817,9 @@ video {
   text-align: center;
 }
 
-.focus\:bg-slate-500:focus{
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
-}
-
-.focus\:bg-slate-100:focus{
-  --tw-bg-opacity: 1;
-  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
-}
-
 .focus\:bg-slate-200:focus{
   --tw-bg-opacity: 1;
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
-}
-
-.focus\:bg-slate-300:focus{
-  --tw-bg-opacity: 1;
-  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
 }
 
 .focus\:hover\:text-center:hover:focus{
