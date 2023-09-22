@@ -20,9 +20,6 @@
   /* 2 */
   border-color: #e5e7eb;
   /* 2 */
-  @media only screen and (max-width: 386px) {
-    overflow-x: hidden;
-  }
 }
 
 ::before,
