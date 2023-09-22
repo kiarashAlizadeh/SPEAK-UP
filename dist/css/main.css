@@ -2938,12 +2938,20 @@ video {
 }
 
 @media (min-width: 1024px){
+  .lg\:fixed{
+    position: fixed;
+  }
+
   .lg\:left-8{
     left: 2rem;
   }
 
   .lg\:top-8{
     top: 2rem;
+  }
+
+  .lg\:bottom-0{
+    bottom: 0px;
   }
 
   .lg\:mx-24{
