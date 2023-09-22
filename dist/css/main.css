@@ -676,6 +676,10 @@ video {
   left: 1rem;
 }
 
+.right-10{
+  right: 2.5rem;
+}
+
 .top-0{
   top: 0px;
 }
@@ -690,22 +694,6 @@ video {
 
 .top-4{
   top: 1rem;
-}
-
-.right-0{
-  right: 0px;
-}
-
-.right-4{
-  right: 1rem;
-}
-
-.right-6{
-  right: 1.5rem;
-}
-
-.right-10{
-  right: 2.5rem;
 }
 
 .isolate{
@@ -2425,11 +2413,6 @@ video {
   color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
-.text-dark-primary{
-  --tw-text-opacity: 1;
-  color: rgb(18 50 118 / var(--tw-text-opacity));
-}
-
 .text-gray-400{
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
@@ -2445,6 +2428,11 @@ video {
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
+.text-lime-400{
+  --tw-text-opacity: 1;
+  color: rgb(163 230 53 / var(--tw-text-opacity));
+}
+
 .text-primary{
   color: rgba(37, 99, 235, 1);
 }
@@ -2452,6 +2440,11 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-dark-primary{
+  --tw-text-opacity: 1;
+  color: rgb(18 50 118 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -2878,14 +2871,6 @@ video {
 }
 
 @media (min-width: 640px){
-  .sm\:right-0{
-    right: 0px;
-  }
-
-  .sm\:right-4{
-    right: 1rem;
-  }
-
   .sm\:mt-0{
     margin-top: 0px;
   }
@@ -3069,12 +3054,12 @@ video {
     left: 1rem;
   }
 
-  .xl\:top-8{
-    top: 2rem;
-  }
-
   .xl\:left-8{
     left: 2rem;
+  }
+
+  .xl\:top-8{
+    top: 2rem;
   }
 
   .xl\:text-white{
