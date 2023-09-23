@@ -571,6 +571,8 @@ video {
 }
 
 .nav-active{
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
   font-weight: 900 !important;
   color: rgba(37, 99, 235, 1) !important;
 }
@@ -3290,10 +3292,6 @@ video {
 
   .xl\:top-8{
     top: 2rem;
-  }
-
-  .xl\:mb-0{
-    margin-bottom: 0px;
   }
 
   .xl\:text-white{
