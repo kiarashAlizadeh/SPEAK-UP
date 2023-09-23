@@ -1,15 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
   .nav-active {
-    @apply text-primary font-black text-base hover:text-primary/60 !important;
+    @apply text-base font-black text-primary hover:text-primary/60 !important;
   }
   * {
-  @media only screen and (max-width: 386px) {
-    overflow-x: hidden;
+    @media only screen and (max-width: 386px) {
+      overflow-x: hidden;
+    }
   }
-}
+  .input {
+    @apply text-sm rounded-lg border-2 border-gray-300 bg-white px-3 py-2 placeholder-gray-500 shadow-md focus:border-gray-400 focus:bg-white focus:placeholder-gray-400 focus:outline-none;
+  }
+  .contact {
+    @apply flex h-[100px] w-[152px] flex-col items-center justify-center gap-y-1 rounded-lg border-2 border-blue-600 py-4 sm:h-[231px] sm:w-[230px] sm:gap-y-3 sm:py-7;
+  }
 }
