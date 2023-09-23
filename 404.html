@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -12,13 +12,13 @@
     />
     <title>404</title>
   </head>
-  <body class="font-Poppins sm:flex sm:flex-col sm:justify-between sm:h-screen">
+  <body class="font-Poppins sm:flex sm:h-screen sm:flex-col sm:justify-between">
     <!-- navBar with burger menu -->
     <nav
-      class="relative px-4 py-4 flex justify-between items-center bg-white gap-x-2 select-none"
+      class="relative flex select-none items-center justify-between gap-x-2 bg-white px-4 py-4"
     >
       <div class="lg:hidden">
-        <button class="navbar-burger flex items-center text-blue-600 p-3">
+        <button class="navbar-burger flex items-center p-3 text-blue-600">
           <svg
             class="block h-6 w-6 fill-current text-black"
             viewBox="0 0 20 20"
@@ -30,24 +30,22 @@
         </button>
       </div>
       <a
-        class="text-xl sm:text-3xl font-bold leading-none flex items-center gap-1"
+        class="flex items-center gap-1 text-xl font-bold leading-none sm:text-3xl"
         href="./index.html"
       >
         <img
           src="./dist/icons/icon.svg"
           alt="icon"
-          class="w-8 h-8 sm:w-12 sm:h-12"
+          class="h-8 w-8 sm:h-12 sm:w-12"
           draggable="false"
         />
         <span class="text-primary">Speak Up</span>
       </a>
       <ul
-        class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6"
+        class="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 transform lg:mx-auto lg:flex lg:w-auto lg:items-center lg:space-x-6"
       >
         <li>
-          <a class="text-sm hover:text-slate-400" href="./index.html"
-            >Home</a
-          >
+          <a class="text-sm hover:text-slate-400" href="./index.html">Home</a>
         </li>
         <li>
           <a class="text-sm hover:text-slate-400" href="#">Courses</a>
@@ -61,14 +59,14 @@
           <a class="text-sm hover:text-slate-400" href="#">About us</a>
         </li>
       </ul>
-      <div class="flex md:gap-x-5 items-center">
+      <div class="flex items-center md:gap-x-5">
         <a
-          class="lg:ml-auto lg:mr-3 py-2 bg-gray-50 text-sm text-gray-900 font-bold rounded-xl transition duration-200 hover:bg-slate-200"
+          class="rounded-xl bg-gray-50 py-2 text-sm font-bold text-gray-900 transition duration-200 hover:bg-slate-200 lg:ml-auto lg:mr-3"
           href="./signin.html"
           ><img src="./dist/icons/nav/user.svg " alt="user" draggable="false"
         /></a>
         <a
-          class="flex py-2 px-4 text-sm font-bold rounded-xl transition duration-200 hover:bg-slate-200"
+          class="flex rounded-xl px-4 py-2 text-sm font-bold transition duration-200 hover:bg-slate-200"
           href="#"
           >EN
           <img
@@ -81,15 +79,15 @@
     <div class="navbar-menu relative z-50 hidden select-none">
       <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
       <nav
-        class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto"
+        class="fixed bottom-0 left-0 top-0 flex w-5/6 max-w-sm flex-col overflow-y-auto border-r bg-white px-6 py-6"
       >
-        <div class="flex items-center mb-8">
+        <div class="mb-8 flex items-center">
           <a class="mr-auto text-3xl font-bold leading-none" href="#">
             <img src="./dist/icons/icon.svg" draggable="false" alt="icon" />
           </a>
           <button class="navbar-close">
             <svg
-              class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+              class="h-6 w-6 cursor-pointer text-gray-400 hover:text-gray-500"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -108,28 +106,28 @@
           <ul>
             <li class="mb-1">
               <a
-                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                class="block rounded p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600"
                 href="./index.html"
                 >Home</a
               >
             </li>
             <li class="mb-1">
               <a
-                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                class="block rounded p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600"
                 href="#"
                 >Courses</a
               >
             </li>
             <li class="mb-1">
               <a
-                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                class="block rounded p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600"
                 href="./contactus.html"
                 >Contact us</a
               >
             </li>
             <li class="mb-1">
               <a
-                class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                class="block rounded p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600"
                 href="#"
                 >About us</a
               >
@@ -138,7 +136,7 @@
         </div>
 
         <a
-          class="flex py-2 px-4 text-sm font-bold rounded-xl transition duration-200 text-gray-400 hover:text-blue-600"
+          class="flex rounded-xl px-4 py-2 text-sm font-bold text-gray-400 transition duration-200 hover:text-blue-600"
           href="#"
           >EN
           <img
@@ -149,17 +147,17 @@
         <div class="mt-auto">
           <div class="pt-6">
             <a
-              class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold bg-gray-50 hover:bg-gray-100 rounded-xl border-2 border-primary"
+              class="mb-3 block rounded-xl border-2 border-primary bg-gray-50 px-4 py-3 text-center text-xs font-semibold leading-loose hover:bg-gray-100"
               href="./signin.html"
               >Sign in</a
             >
             <a
-              class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700 rounded-xl"
+              class="mb-2 block rounded-xl bg-blue-600 px-4 py-3 text-center text-xs font-semibold leading-loose text-white hover:bg-blue-700"
               href="./signup.html"
               >Sign Up</a
             >
           </div>
-          <p class="my-4 text-xs text-center text-gray-400">
+          <p class="my-4 text-center text-xs text-gray-400">
             <span>Copyright © 2023 SpeakUp</span>
           </p>
         </div>
@@ -167,39 +165,49 @@
     </div>
 
     <section class="flex flex-col items-center">
-        <img src="./dist/images/404/bro.png" alt="404 pic" class="w-[214px] sm:w-[414px] mb-9 select-none" draggable="false">
-        <div class="flex flex-col items-center gap-y-4"">
-            <span class="text-[20px] sm:text-[40px] font-bold">
-                This page could not be found
-            </span>
-            <span class="text-xs sm:text-lg text-center">
-                The page you are looking for might have been removed or temporarily unavailable.
-            </span>
-            <a href="./index.html" class="bg-blue-600 py-2 px-6 text-white rounded-lg mb-16 select-none">Back to Homepage</a>
-        </div>
+      <img
+        src="./dist/images/404/bro.png"
+        alt="404 pic"
+        class="mb-9 w-[214px] select-none sm:w-[414px]"
+        draggable="false"
+      />
+      <div class="flex flex-col items-center gap-y-4">
+        <span class="text-[20px] font-bold sm:text-[40px]">
+          This page could not be found
+        </span>
+        <span class="text-center text-xs sm:text-lg">
+          The page you are looking for might have been removed or temporarily
+          unavailable.
+        </span>
+        <a
+          href="./index.html"
+          class="mb-16 select-none rounded-lg bg-blue-600 px-6 py-2 text-white"
+          >Back to Homepage</a
+        >
+      </div>
     </section>
-    
+
     <!-- footer -->
     <footer
-      class="bg-gradient-to-b from-primary to-dark-primary w-full flex flex-col py-5 text-white select-none"
+      class="flex w-full select-none flex-col bg-gradient-to-b from-primary to-dark-primary py-5 text-white"
     >
       <div class="flex flex-col items-start px-5">
         <div
-          class="flex items-center flex-wrap sm:justify-between w-full gap-5"
+          class="flex w-full flex-wrap items-center gap-5 sm:justify-between"
         >
-          <span class="hidden lg:inline max-w-[258px]">
+          <span class="hidden max-w-[258px] lg:inline">
             Fluency is nothing more than mastering the 100 most important
             real-life conversations
           </span>
           <div class="flex gap-10">
-            <ul class="flex flex-col gap-1 items-start sm:items-center">
-              <li class="font-black mb-2">Speak up courses</li>
+            <ul class="flex flex-col items-start gap-1 sm:items-center">
+              <li class="mb-2 font-black">Speak up courses</li>
               <li><a href="">Learn english</a></li>
               <li><a href="">Learn Turkish</a></li>
               <li><a href="">Learn French</a></li>
             </ul>
-            <ul class="flex flex-col gap-1 items-start sm:items-center">
-              <li class="font-black mb-2">Products</li>
+            <ul class="flex flex-col items-start gap-1 sm:items-center">
+              <li class="mb-2 font-black">Products</li>
               <li><a href="./index.html">Landing page</a></li>
               <li><a href="">About us</a></li>
               <li><a href="">Contact us</a></li>
@@ -235,7 +243,7 @@
           </div>
         </div>
 
-        <div class="flex items-center justify-between mt-5 gap-x-3">
+        <div class="mt-5 flex items-center justify-between gap-x-3">
           <a href=""
             ><img
               src="./dist/icons/footer/facebook.svg"
@@ -262,8 +270,8 @@
           /></a>
         </div>
       </div>
-      <div class="max-w-full text-white border-white border-b-2">&nbsp</div>
-      <div class="flex flex-wrap lg:justify-between gap-y-3 px-5 mt-5">
+      <div class="max-w-full border-b-2 border-white text-white">&nbsp</div>
+      <div class="mt-5 flex flex-wrap gap-y-3 px-5 lg:justify-between">
         <span> 2023 Speakup. All Rights Reserved. </span>
         <div class="flex gap-x-5">
           <a href="">Terms & Conditions</a>
