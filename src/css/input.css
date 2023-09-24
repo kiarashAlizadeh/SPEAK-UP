@@ -21,4 +21,7 @@
   .shadow-c {
     box-shadow: 4px 4px 20px 6px #00000054;
   }
+  .shadow-pic {
+    box-shadow: 9px -2px 20px 6px #00000057;
+  }
 }
