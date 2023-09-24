@@ -13,424 +13,428 @@
     <title>Sign Up</title>
   </head>
   <body class="font-Poppins">
-    <!-- navBar with burger menu -->
-    <nav
-      class="relative flex select-none items-center justify-between gap-x-2 bg-white px-4 py-4"
-    >
-      <div class="lg:hidden">
-        <button class="navbar-burger flex items-center p-3 text-blue-600">
-          <svg
-            class="block h-6 w-6 fill-current text-black"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Mobile menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-          </svg>
-        </button>
-      </div>
-      <a
-        class="flex items-center gap-1 text-xl font-bold leading-none sm:text-3xl"
-        href="./index.html"
-      >
-        <img
-          src="./dist/icons/icon.svg"
-          alt="icon"
-          class="h-8 w-8 sm:h-12 sm:w-12"
-          draggable="false"
-        />
-        <span class="text-primary">Speak Up</span>
-      </a>
-      <ul
-        class="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 transform lg:mx-auto lg:flex lg:w-auto lg:items-center lg:space-x-6"
-      >
-        <li>
-          <a class="text-sm hover:text-slate-400" href="./index.html">Home</a>
-        </li>
-        <li>
-          <a class="text-sm hover:text-slate-400" href="#">Courses</a>
-        </li>
-        <li>
-          <a class="text-sm hover:text-slate-400" href="./contactus.html"
-            >Contact us</a
-          >
-        </li>
-        <li>
-          <a class="text-sm hover:text-slate-400" href="#">About us</a>
-        </li>
-      </ul>
-      <div class="flex items-center md:gap-x-5">
-        <a
-          class="rounded-xl bg-gray-50 py-2 text-sm font-bold text-gray-900 transition duration-200 hover:bg-slate-200 lg:ml-auto lg:mr-3"
-          href="./signin.html"
-          ><img src="./dist/icons/nav/user.svg " alt="user" draggable="false"
-        /></a>
-        <a
-          class="flex rounded-xl px-4 py-2 text-sm font-bold transition duration-200 hover:bg-slate-200"
-          href="#"
-          >EN
-          <img
-            src="./dist/icons/nav/down-arrow.svg"
-            alt="down-arrow"
-            draggable="false"
-        /></a>
-      </div>
-    </nav>
-    <div class="navbar-menu relative z-50 hidden select-none">
-      <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+    <header>
+      <!-- navBar with burger menu -->
       <nav
-        class="fixed bottom-0 left-0 top-0 flex w-5/6 max-w-sm flex-col overflow-y-auto border-r bg-white px-6 py-6"
+        class="relative flex select-none items-center justify-between gap-x-2 bg-white px-4 py-4"
       >
-        <div class="mb-8 flex items-center">
-          <a class="mr-auto text-3xl font-bold leading-none" href="#">
-            <img src="./dist/icons/icon.svg" draggable="false" alt="icon" />
-          </a>
-          <button class="navbar-close">
+        <div class="lg:hidden">
+          <button class="navbar-burger flex items-center p-3 text-blue-600">
             <svg
-              class="h-6 w-6 cursor-pointer text-gray-400 hover:text-gray-500"
+              class="block h-6 w-6 fill-current text-black"
+              viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M6 18L18 6M6 6l12 12"
-              ></path>
+              <title>Mobile menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
             </svg>
           </button>
         </div>
-        <div>
-          <ul>
-            <li class="mb-1">
-              <a
-                class="block rounded p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600"
-                href="./index.html"
-                >Home</a
-              >
-            </li>
-            <li class="mb-1">
-              <a
-                class="block rounded p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600"
-                href="#"
-                >Courses</a
-              >
-            </li>
-            <li class="mb-1">
-              <a
-                class="block rounded p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600"
-                href="./contactus.html"
-                >Contact us</a
-              >
-            </li>
-            <li class="mb-1">
-              <a
-                class="block rounded p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600"
-                href="#"
-                >About us</a
-              >
-            </li>
-          </ul>
-        </div>
-
         <a
-          class="flex rounded-xl px-4 py-2 text-sm font-bold text-gray-400 transition duration-200 hover:text-blue-600"
-          href="#"
-          >EN
+          class="flex items-center gap-1 text-xl font-bold leading-none sm:text-3xl"
+          href="./index.html"
+        >
           <img
-            src="./dist/icons/nav/down-arrow.svg"
-            alt="down-arrow"
-            draggable="false"
-        /></a>
-        <div class="mt-auto">
-          <div class="pt-6">
-            <a
-              class="mb-3 block rounded-xl border-2 border-primary bg-gray-50 px-4 py-3 text-center text-xs font-semibold leading-loose hover:bg-gray-100"
-              href="./signin.html"
-              >Sign in</a
-            >
-            <a
-              class="mb-2 block rounded-xl bg-blue-600 px-4 py-3 text-center text-xs font-semibold leading-loose text-white hover:bg-blue-700"
-              href="./signup.html"
-              >Sign Up</a
-            >
-          </div>
-          <p class="my-4 text-center text-xs text-gray-400">
-            <span>Copyright © 2023 SpeakUp</span>
-          </p>
-        </div>
-      </nav>
-    </div>
-
-    <div class="flex min-h-screen flex-col">
-      <!-- sign up -->
-      <section
-        class="mx-auto my-auto flex w-fit select-none flex-col items-center sm:rounded-lg sm:bg-blue-100 md:flex-row"
-      >
-        <div class="relative">
-          <img
-            src="./dist/images/signup.jpg"
-            alt="sign up"
-            class="w-full sm:w-[496px] sm:rounded-l-lg"
+            src="./dist/icons/icon.svg"
+            alt="icon"
+            class="h-8 w-8 sm:h-12 sm:w-12"
             draggable="false"
           />
-          <span
-            class="absolute left-4 top-4 w-[138px] text-center text-xl text-gray-600 sm:text-start md:w-[197px] lg:left-8 lg:top-8"
-            >Welcome, Looks like you’re new here!</span
-          >
-        </div>
-
-        <div
-          class="mt-8 flex flex-col items-start rounded-lg bg-blue-100 p-10 sm:mt-0 sm:bg-none lg:mx-24 lg:h-full"
+          <span class="text-primary">Speak Up</span>
+        </a>
+        <ul
+          class="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 transform lg:mx-auto lg:flex lg:w-auto lg:items-center lg:space-x-6"
         >
-          <form action="" class="flex flex-col items-start gap-y-4">
-            <h1 class="text-3xl font-black sm:text-5xl">Sign Up</h1>
-            <span class="flex w-full flex-col">
-              <label for="email" class="text-gray-600">Full Name</label>
-              <input
-                type="text"
-                id="fname"
-                name="fname"
-                class="text-md block w-full rounded-lg border-2 border-gray-300 bg-white px-3 py-2 placeholder-gray-500 shadow-md focus:border-gray-400 focus:bg-white focus:placeholder-gray-400 focus:outline-none"
-                placeholder="Enter your name"
-              />
-            </span>
-            <span class="flex w-full flex-col">
-              <label for="tel" class="text-gray-600">Mobile Number</label>
-              <input
-                type="tel"
-                id="tel"
-                name="tel"
-                class="text-md block w-full rounded-lg border-2 border-gray-300 bg-white px-3 py-2 placeholder-gray-500 shadow-md focus:border-gray-400 focus:bg-white focus:placeholder-gray-400 focus:outline-none"
-                placeholder="Enter your Mobile Number"
-              />
-            </span>
-            <span class="flex w-full flex-col">
-              <label for="email" class="text-gray-600">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                class="text-md block w-full rounded-lg border-2 border-gray-300 bg-white px-3 py-2 placeholder-gray-500 shadow-md focus:border-gray-400 focus:bg-white focus:placeholder-gray-400 focus:outline-none"
-                placeholder="Enter your Email"
-              />
-            </span>
-            <span class="flex w-full flex-col" x-data="{ show: true }">
-              <label for="password" class="text-gray-600">Password</label>
-              <div class="relative">
-                <input
-                  placeholder="Enter your Password"
-                  :type="show ? 'password' : 'text'"
-                  class="text-md block w-full rounded-lg border-2 border-gray-300 bg-white px-3 py-2 placeholder-gray-500 shadow-md focus:border-gray-400 focus:bg-white focus:placeholder-gray-400 focus:outline-none"
-                />
-                <div
-                  class="absolute inset-y-0 right-0 flex items-center pr-3 text-sm leading-5"
-                >
-                  <svg
-                    class="h-6 cursor-pointer text-gray-500 hover:text-gray-700"
-                    fill="none"
-                    @click="show = !show"
-                    :class="{'hidden': !show, 'block':show }"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewbox="0 0 576 512"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"
-                    ></path>
-                  </svg>
-
-                  <svg
-                    class="h-6 cursor-pointer text-gray-500 hover:text-gray-700"
-                    fill="none"
-                    @click="show = !show"
-                    :class="{'block': !show, 'hidden':show }"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewbox="0 0 640 512"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M320 400c-75.85 0-137.25-58.71-142.9-133.11L72.2 185.82c-13.79 17.3-26.48 35.59-36.72 55.59a32.35 32.35 0 0 0 0 29.19C89.71 376.41 197.07 448 320 448c26.91 0 52.87-4 77.89-10.46L346 397.39a144.13 144.13 0 0 1-26 2.61zm313.82 58.1l-110.55-85.44a331.25 331.25 0 0 0 81.25-102.07 32.35 32.35 0 0 0 0-29.19C550.29 135.59 442.93 64 320 64a308.15 308.15 0 0 0-147.32 37.7L45.46 3.37A16 16 0 0 0 23 6.18L3.37 31.45A16 16 0 0 0 6.18 53.9l588.36 454.73a16 16 0 0 0 22.46-2.81l19.64-25.27a16 16 0 0 0-2.82-22.45zm-183.72-142l-39.3-30.38A94.75 94.75 0 0 0 416 256a94.76 94.76 0 0 0-121.31-92.21A47.65 47.65 0 0 1 304 192a46.64 46.64 0 0 1-1.54 10l-73.61-56.89A142.31 142.31 0 0 1 320 112a143.92 143.92 0 0 1 144 144c0 21.63-5.29 41.79-13.9 60.11z"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-            </span>
-            <span class="flex w-full flex-col" x-data="{ show: true }">
-              <label for="password" class="text-gray-600"
-                >Re Enter Password</label
-              >
-              <div class="relative">
-                <input
-                  placeholder="Re Enter Password"
-                  :type="show ? 'password' : 'text'"
-                  class="text-md block w-full rounded-lg border-2 border-gray-300 bg-white px-3 py-2 placeholder-gray-500 shadow-md focus:border-gray-400 focus:bg-white focus:placeholder-gray-400 focus:outline-none"
-                />
-                <div
-                  class="absolute inset-y-0 right-0 flex items-center pr-3 text-sm leading-5"
-                >
-                  <svg
-                    class="h-6 cursor-pointer text-gray-500 hover:text-gray-700"
-                    fill="none"
-                    @click="show = !show"
-                    :class="{'hidden': !show, 'block':show }"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewbox="0 0 576 512"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"
-                    ></path>
-                  </svg>
-
-                  <svg
-                    class="h-6 cursor-pointer text-gray-500 hover:text-gray-700"
-                    fill="none"
-                    @click="show = !show"
-                    :class="{'block': !show, 'hidden':show }"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewbox="0 0 640 512"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M320 400c-75.85 0-137.25-58.71-142.9-133.11L72.2 185.82c-13.79 17.3-26.48 35.59-36.72 55.59a32.35 32.35 0 0 0 0 29.19C89.71 376.41 197.07 448 320 448c26.91 0 52.87-4 77.89-10.46L346 397.39a144.13 144.13 0 0 1-26 2.61zm313.82 58.1l-110.55-85.44a331.25 331.25 0 0 0 81.25-102.07 32.35 32.35 0 0 0 0-29.19C550.29 135.59 442.93 64 320 64a308.15 308.15 0 0 0-147.32 37.7L45.46 3.37A16 16 0 0 0 23 6.18L3.37 31.45A16 16 0 0 0 6.18 53.9l588.36 454.73a16 16 0 0 0 22.46-2.81l19.64-25.27a16 16 0 0 0-2.82-22.45zm-183.72-142l-39.3-30.38A94.75 94.75 0 0 0 416 256a94.76 94.76 0 0 0-121.31-92.21A47.65 47.65 0 0 1 304 192a46.64 46.64 0 0 1-1.54 10l-73.61-56.89A142.31 142.31 0 0 1 320 112a143.92 143.92 0 0 1 144 144c0 21.63-5.29 41.79-13.9 60.11z"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-            </span>
-            <div>
-              <span>
-                <input
-                  type="checkbox"
-                  id="Remember"
-                  name="Remember"
-                  value="Remember Me"
-                  class="cursor-pointer"
-                />
-                <label
-                  for="Remember"
-                  class="cursor-pointer text-gray-600 hover:text-gray-900"
-                  >Remember Me
-                </label>
-                <br />
-              </span>
-              <input
-                type="submit"
-                value="Sign Up"
-                class="mt-3 h-8 w-[301px] cursor-pointer rounded-lg bg-blue-500 px-2 text-white hover:bg-blue-700"
-              />
-            </div>
-          </form>
-          <span class="mt-4"
-            >Already have an account? &nbsp
-            <a
-              href="./signin.html"
-              class="border-b-2 border-transparent text-blue-500 hover:border-gray-400"
+          <li>
+            <a class="text-sm hover:text-slate-400" href="./index.html">Home</a>
+          </li>
+          <li>
+            <a class="text-sm hover:text-slate-400" href="#">Courses</a>
+          </li>
+          <li>
+            <a class="text-sm hover:text-slate-400" href="./contactus.html"
+              >Contact us</a
             >
-              Sign in</a
-            ></span
-          >
+          </li>
+          <li>
+            <a class="text-sm hover:text-slate-400" href="#">About us</a>
+          </li>
+        </ul>
+        <div class="flex items-center md:gap-x-5">
+          <a
+            class="rounded-xl bg-gray-50 py-2 text-sm font-bold text-gray-900 transition duration-200 hover:bg-slate-200 lg:ml-auto lg:mr-3"
+            href="./signin.html"
+            ><img src="./dist/icons/nav/user.svg " alt="user" draggable="false"
+          /></a>
+          <a
+            class="flex rounded-xl px-4 py-2 text-sm font-bold transition duration-200 hover:bg-slate-200"
+            href="#"
+            >EN
+            <img
+              src="./dist/icons/nav/down-arrow.svg"
+              alt="down-arrow"
+              draggable="false"
+          /></a>
         </div>
-      </section>
-
-      <!-- footer -->
-      <footer
-        class="flex w-full select-none flex-col bg-gradient-to-b from-primary to-dark-primary py-5 text-white"
-      >
-        <div class="flex flex-col items-start px-5">
-          <div
-            class="flex w-full flex-wrap items-center gap-5 sm:justify-between"
-          >
-            <span class="hidden max-w-[258px] lg:inline">
-              Fluency is nothing more than mastering the 100 most important
-              real-life conversations
-            </span>
-            <div class="flex gap-10">
-              <ul class="flex flex-col items-start gap-1 sm:items-center">
-                <li class="mb-2 font-black">Speak up courses</li>
-                <li><a href="">Learn english</a></li>
-                <li><a href="">Learn Turkish</a></li>
-                <li><a href="">Learn French</a></li>
-              </ul>
-              <ul class="flex flex-col items-start gap-1 sm:items-center">
-                <li class="mb-2 font-black">Products</li>
-                <li><a href="./index.html">Landing page</a></li>
-                <li><a href="">About us</a></li>
-                <li><a href="">Contact us</a></li>
-              </ul>
-            </div>
-            <div class="flex flex-col gap-2">
-              <span class="mb-2 font-black">Contact information</span>
-              <a href="tel:+34933478486" class="flex gap-x-1"
-                ><img
-                  src="./dist/icons/footer/phone.svg"
-                  alt="phone"
-                  draggable="false"
-                />
-                +34933478486</a
+      </nav>
+      <div class="navbar-menu relative z-50 hidden select-none">
+        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <nav
+          class="fixed bottom-0 left-0 top-0 flex w-5/6 max-w-sm flex-col overflow-y-auto border-r bg-white px-6 py-6"
+        >
+          <div class="mb-8 flex items-center">
+            <a class="mr-auto text-3xl font-bold leading-none" href="#">
+              <img src="./dist/icons/icon.svg" draggable="false" alt="icon" />
+            </a>
+            <button class="navbar-close">
+              <svg
+                class="h-6 w-6 cursor-pointer text-gray-400 hover:text-gray-500"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
               >
-              <a href="mailto:Info@speakup.we" class="flex gap-x-1"
-                ><img
-                  src="./dist/icons/footer/mail.svg"
-                  alt="mail"
-                  draggable="false"
-                />
-                Info@speakup.we</a
-              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div>
+            <ul>
+              <li class="mb-1">
+                <a
+                  class="block rounded p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600"
+                  href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  class="block rounded p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600"
+                  href="#"
+                  >Courses</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  class="block rounded p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600"
+                  href="./contactus.html"
+                  >Contact us</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  class="block rounded p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600"
+                  href="#"
+                  >About us</a
+                >
+              </li>
+            </ul>
+          </div>
 
+          <a
+            class="flex rounded-xl px-4 py-2 text-sm font-bold text-gray-400 transition duration-200 hover:text-blue-600"
+            href="#"
+            >EN
+            <img
+              src="./dist/icons/nav/down-arrow.svg"
+              alt="down-arrow"
+              draggable="false"
+          /></a>
+          <div class="mt-auto">
+            <div class="pt-6">
               <a
-                href="https://www.google.com/maps/place/استان+تهران،+تهران،+میدان+آزادی،+برج+آزادی،+ایران%E2%80%AD/@35.6997331,51.3380361,17z/data=!4m6!3m5!1s0x3f8dfe05732c2e91:0xfcbec017befd15f4!8m2!3d35.6997331!4d51.3380361!16zL20vMDR4ZHMw"
-                class="flex gap-x-1"
-                ><img
-                  src="./dist/icons/footer/location.svg"
-                  alt="location"
-                  draggable="false"
-                />
-                barcelona, C/ de sardenya
-              </a>
+                class="mb-3 block rounded-xl border-2 border-primary bg-gray-50 px-4 py-3 text-center text-xs font-semibold leading-loose hover:bg-gray-100"
+                href="./signin.html"
+                >Sign in</a
+              >
+              <a
+                class="mb-2 block rounded-xl bg-blue-600 px-4 py-3 text-center text-xs font-semibold leading-loose text-white hover:bg-blue-700"
+                href="./signup.html"
+                >Sign Up</a
+              >
             </div>
+            <p class="my-4 text-center text-xs text-gray-400">
+              <span>Copyright © 2023 SpeakUp</span>
+            </p>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="flex min-h-screen flex-col">
+        <!-- sign up -->
+        <section
+          class="mx-auto my-auto flex w-fit select-none flex-col items-center sm:rounded-lg sm:bg-blue-100 md:flex-row"
+        >
+          <div class="relative">
+            <img
+              src="./dist/images/signup.jpg"
+              alt="sign up"
+              class="w-full sm:w-[496px] sm:rounded-l-lg"
+              draggable="false"
+            />
+            <span
+              class="absolute left-4 top-4 w-[138px] text-center text-xl text-gray-600 sm:text-start md:w-[197px] lg:left-8 lg:top-8"
+              >Welcome, Looks like you’re new here!</span
+            >
           </div>
 
-          <div class="mt-5 flex items-center justify-between gap-x-3">
-            <a href=""
-              ><img
-                src="./dist/icons/footer/facebook.svg"
-                alt="facebook"
-                draggable="false"
-            /></a>
-            <a href=""
-              ><img
-                src="./dist/icons/footer/linkdin.svg"
-                alt="linkdin"
-                draggable="false"
-            /></a>
-            <a href=""
-              ><img
-                src="./dist/icons/footer/twitter.svg"
-                alt="twitter"
-                draggable="false"
-            /></a>
-            <a href=""
-              ><img
-                src="./dist/icons/footer/pinterest.svg"
-                alt="pinterest"
-                draggable="false"
-            /></a>
+          <div
+            class="mt-8 flex flex-col items-start rounded-lg bg-blue-100 p-10 sm:mt-0 sm:bg-none lg:mx-24 lg:h-full"
+          >
+            <form action="" class="flex flex-col items-start gap-y-4">
+              <h1 class="text-3xl font-black sm:text-5xl">Sign Up</h1>
+              <span class="flex w-full flex-col">
+                <label for="email" class="text-gray-600">Full Name</label>
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  class="text-md block w-full rounded-lg border-2 border-gray-300 bg-white px-3 py-2 placeholder-gray-500 shadow-md focus:border-gray-400 focus:bg-white focus:placeholder-gray-400 focus:outline-none"
+                  placeholder="Enter your name"
+                />
+              </span>
+              <span class="flex w-full flex-col">
+                <label for="tel" class="text-gray-600">Mobile Number</label>
+                <input
+                  type="tel"
+                  id="tel"
+                  name="tel"
+                  class="text-md block w-full rounded-lg border-2 border-gray-300 bg-white px-3 py-2 placeholder-gray-500 shadow-md focus:border-gray-400 focus:bg-white focus:placeholder-gray-400 focus:outline-none"
+                  placeholder="Enter your Mobile Number"
+                />
+              </span>
+              <span class="flex w-full flex-col">
+                <label for="email" class="text-gray-600">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="text-md block w-full rounded-lg border-2 border-gray-300 bg-white px-3 py-2 placeholder-gray-500 shadow-md focus:border-gray-400 focus:bg-white focus:placeholder-gray-400 focus:outline-none"
+                  placeholder="Enter your Email"
+                />
+              </span>
+              <span class="flex w-full flex-col" x-data="{ show: true }">
+                <label for="password" class="text-gray-600">Password</label>
+                <div class="relative">
+                  <input
+                    placeholder="Enter your Password"
+                    :type="show ? 'password' : 'text'"
+                    class="text-md block w-full rounded-lg border-2 border-gray-300 bg-white px-3 py-2 placeholder-gray-500 shadow-md focus:border-gray-400 focus:bg-white focus:placeholder-gray-400 focus:outline-none"
+                  />
+                  <div
+                    class="absolute inset-y-0 right-0 flex items-center pr-3 text-sm leading-5"
+                  >
+                    <svg
+                      class="h-6 cursor-pointer text-gray-500 hover:text-gray-700"
+                      fill="none"
+                      @click="show = !show"
+                      :class="{'hidden': !show, 'block':show }"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewbox="0 0 576 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"
+                      ></path>
+                    </svg>
+
+                    <svg
+                      class="h-6 cursor-pointer text-gray-500 hover:text-gray-700"
+                      fill="none"
+                      @click="show = !show"
+                      :class="{'block': !show, 'hidden':show }"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewbox="0 0 640 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M320 400c-75.85 0-137.25-58.71-142.9-133.11L72.2 185.82c-13.79 17.3-26.48 35.59-36.72 55.59a32.35 32.35 0 0 0 0 29.19C89.71 376.41 197.07 448 320 448c26.91 0 52.87-4 77.89-10.46L346 397.39a144.13 144.13 0 0 1-26 2.61zm313.82 58.1l-110.55-85.44a331.25 331.25 0 0 0 81.25-102.07 32.35 32.35 0 0 0 0-29.19C550.29 135.59 442.93 64 320 64a308.15 308.15 0 0 0-147.32 37.7L45.46 3.37A16 16 0 0 0 23 6.18L3.37 31.45A16 16 0 0 0 6.18 53.9l588.36 454.73a16 16 0 0 0 22.46-2.81l19.64-25.27a16 16 0 0 0-2.82-22.45zm-183.72-142l-39.3-30.38A94.75 94.75 0 0 0 416 256a94.76 94.76 0 0 0-121.31-92.21A47.65 47.65 0 0 1 304 192a46.64 46.64 0 0 1-1.54 10l-73.61-56.89A142.31 142.31 0 0 1 320 112a143.92 143.92 0 0 1 144 144c0 21.63-5.29 41.79-13.9 60.11z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </span>
+              <span class="flex w-full flex-col" x-data="{ show: true }">
+                <label for="password" class="text-gray-600"
+                  >Re Enter Password</label
+                >
+                <div class="relative">
+                  <input
+                    placeholder="Re Enter Password"
+                    :type="show ? 'password' : 'text'"
+                    class="text-md block w-full rounded-lg border-2 border-gray-300 bg-white px-3 py-2 placeholder-gray-500 shadow-md focus:border-gray-400 focus:bg-white focus:placeholder-gray-400 focus:outline-none"
+                  />
+                  <div
+                    class="absolute inset-y-0 right-0 flex items-center pr-3 text-sm leading-5"
+                  >
+                    <svg
+                      class="h-6 cursor-pointer text-gray-500 hover:text-gray-700"
+                      fill="none"
+                      @click="show = !show"
+                      :class="{'hidden': !show, 'block':show }"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewbox="0 0 576 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"
+                      ></path>
+                    </svg>
+
+                    <svg
+                      class="h-6 cursor-pointer text-gray-500 hover:text-gray-700"
+                      fill="none"
+                      @click="show = !show"
+                      :class="{'block': !show, 'hidden':show }"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewbox="0 0 640 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M320 400c-75.85 0-137.25-58.71-142.9-133.11L72.2 185.82c-13.79 17.3-26.48 35.59-36.72 55.59a32.35 32.35 0 0 0 0 29.19C89.71 376.41 197.07 448 320 448c26.91 0 52.87-4 77.89-10.46L346 397.39a144.13 144.13 0 0 1-26 2.61zm313.82 58.1l-110.55-85.44a331.25 331.25 0 0 0 81.25-102.07 32.35 32.35 0 0 0 0-29.19C550.29 135.59 442.93 64 320 64a308.15 308.15 0 0 0-147.32 37.7L45.46 3.37A16 16 0 0 0 23 6.18L3.37 31.45A16 16 0 0 0 6.18 53.9l588.36 454.73a16 16 0 0 0 22.46-2.81l19.64-25.27a16 16 0 0 0-2.82-22.45zm-183.72-142l-39.3-30.38A94.75 94.75 0 0 0 416 256a94.76 94.76 0 0 0-121.31-92.21A47.65 47.65 0 0 1 304 192a46.64 46.64 0 0 1-1.54 10l-73.61-56.89A142.31 142.31 0 0 1 320 112a143.92 143.92 0 0 1 144 144c0 21.63-5.29 41.79-13.9 60.11z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </span>
+              <div>
+                <span>
+                  <input
+                    type="checkbox"
+                    id="Remember"
+                    name="Remember"
+                    value="Remember Me"
+                    class="cursor-pointer"
+                  />
+                  <label
+                    for="Remember"
+                    class="cursor-pointer text-gray-600 hover:text-gray-900"
+                    >Remember Me
+                  </label>
+                  <br />
+                </span>
+                <input
+                  type="submit"
+                  value="Sign Up"
+                  class="mt-3 h-8 w-[301px] cursor-pointer rounded-lg bg-blue-500 px-2 text-white hover:bg-blue-700"
+                />
+              </div>
+            </form>
+            <span class="mt-4"
+              >Already have an account? &nbsp
+              <a
+                href="./signin.html"
+                class="border-b-2 border-transparent text-blue-500 hover:border-gray-400"
+              >
+                Sign in</a
+              ></span
+            >
           </div>
-        </div>
-        <div class="max-w-full border-b-2 border-white text-white">&nbsp</div>
-        <div class="mt-5 flex flex-wrap gap-y-3 px-5 lg:justify-between">
-          <span> 2023 Speakup. All Rights Reserved. </span>
-          <div class="flex gap-x-5">
-            <a href="">Terms & Conditions</a>
-            <a href="">Privacy Policy</a>
+        </section>
+
+        <!-- footer -->
+        <footer
+          class="flex w-full select-none flex-col bg-gradient-to-b from-primary to-dark-primary py-5 text-white"
+        >
+          <div class="flex flex-col items-start px-5">
+            <div
+              class="flex w-full flex-wrap items-center gap-5 sm:justify-between"
+            >
+              <span class="hidden max-w-[258px] lg:inline">
+                Fluency is nothing more than mastering the 100 most important
+                real-life conversations
+              </span>
+              <div class="flex gap-10">
+                <ul class="flex flex-col items-start gap-1 sm:items-center">
+                  <li class="mb-2 font-black">Speak up courses</li>
+                  <li><a href="">Learn english</a></li>
+                  <li><a href="">Learn Turkish</a></li>
+                  <li><a href="">Learn French</a></li>
+                </ul>
+                <ul class="flex flex-col items-start gap-1 sm:items-center">
+                  <li class="mb-2 font-black">Products</li>
+                  <li><a href="./index.html">Landing page</a></li>
+                  <li><a href="">About us</a></li>
+                  <li><a href="">Contact us</a></li>
+                </ul>
+              </div>
+              <div class="flex flex-col gap-2">
+                <span class="mb-2 font-black">Contact information</span>
+                <a href="tel:+34933478486" class="flex gap-x-1"
+                  ><img
+                    src="./dist/icons/footer/phone.svg"
+                    alt="phone"
+                    draggable="false"
+                  />
+                  +34933478486</a
+                >
+                <a href="mailto:Info@speakup.we" class="flex gap-x-1"
+                  ><img
+                    src="./dist/icons/footer/mail.svg"
+                    alt="mail"
+                    draggable="false"
+                  />
+                  Info@speakup.we</a
+                >
+
+                <a
+                  href="https://www.google.com/maps/place/استان+تهران،+تهران،+میدان+آزادی،+برج+آزادی،+ایران%E2%80%AD/@35.6997331,51.3380361,17z/data=!4m6!3m5!1s0x3f8dfe05732c2e91:0xfcbec017befd15f4!8m2!3d35.6997331!4d51.3380361!16zL20vMDR4ZHMw"
+                  class="flex gap-x-1"
+                  ><img
+                    src="./dist/icons/footer/location.svg"
+                    alt="location"
+                    draggable="false"
+                  />
+                  barcelona, C/ de sardenya
+                </a>
+              </div>
+            </div>
+
+            <div class="mt-5 flex items-center justify-between gap-x-3">
+              <a href=""
+                ><img
+                  src="./dist/icons/footer/facebook.svg"
+                  alt="facebook"
+                  draggable="false"
+              /></a>
+              <a href=""
+                ><img
+                  src="./dist/icons/footer/linkdin.svg"
+                  alt="linkdin"
+                  draggable="false"
+              /></a>
+              <a href=""
+                ><img
+                  src="./dist/icons/footer/twitter.svg"
+                  alt="twitter"
+                  draggable="false"
+              /></a>
+              <a href=""
+                ><img
+                  src="./dist/icons/footer/pinterest.svg"
+                  alt="pinterest"
+                  draggable="false"
+              /></a>
+            </div>
           </div>
-        </div>
-      </footer>
-    </div>
+          <div class="max-w-full border-b-2 border-white text-white">&nbsp</div>
+          <div class="mt-5 flex flex-wrap gap-y-3 px-5 lg:justify-between">
+            <span> 2023 Speakup. All Rights Reserved. </span>
+            <div class="flex gap-x-5">
+              <a href="">Terms & Conditions</a>
+              <a href="">Privacy Policy</a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </main>
 
     <!-- burgerMenus script -->
     <script src="./dist/js/burgerMenus.js"></script>
