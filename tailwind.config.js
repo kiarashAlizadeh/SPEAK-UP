@@ -7,7 +7,7 @@ module.exports = {
         Poppins: ["Poppins"],
       },
       colors: {
-        primary: "rgb(37, 150, 190)",
+        primary: "#0065F4",
         "dark-primary": "#123276",
       },
     },
