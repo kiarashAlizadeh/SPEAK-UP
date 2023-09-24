@@ -719,6 +719,10 @@ video {
   }
 }
 
+.shadow-c {
+  box-shadow: 4px 4px 20px 6px #00000054;
+}
+
 .sr-only{
   position: absolute;
   width: 1px;
