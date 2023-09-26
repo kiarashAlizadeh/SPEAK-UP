@@ -554,7 +554,7 @@
         >
           <!-- basic -->
           <div
-            class="group flex w-[256px] flex-col justify-between rounded-lg border-2 border-blue-400 px-2 py-4 text-gray-800 lg:relative lg:mt-3 lg:h-[539px] lg:w-[392px] lg:justify-start lg:hover:scale-y-110"
+            class="plan group hidden w-[256px] flex-col justify-between rounded-lg border-2 border-blue-400 px-2 py-4 text-gray-800 sm:flex lg:relative lg:mt-3 lg:h-[539px] lg:w-[392px] lg:justify-start lg:hover:scale-y-110"
           >
             <span class="mb-1 text-2xl font-black lg:text-4xl">Basic</span>
             <span class="text-sm font-normal lg:text-lg">Limited access</span>
@@ -605,7 +605,7 @@
 
           <!-- premium -->
           <div
-            class="group flex w-[256px] flex-col justify-between rounded-lg border-2 border-blue-400 px-2 py-4 text-gray-800 lg:relative lg:mt-3 lg:h-[539px] lg:w-[392px] lg:justify-start lg:hover:scale-y-110"
+            class="plan group hidden w-[256px] flex-col justify-between rounded-lg border-2 border-blue-400 px-2 py-4 text-gray-800 sm:flex lg:relative lg:mt-3 lg:h-[539px] lg:w-[392px] lg:justify-start lg:hover:scale-y-110"
           >
             <span class="mb-1 text-2xl font-black lg:text-4xl">Premium </span>
             <span class="text-sm font-normal lg:text-lg">For individuals</span>
@@ -686,7 +686,7 @@
 
           <!-- teams -->
           <div
-            class="group flex w-[256px] flex-col justify-between rounded-lg border-2 border-blue-400 px-2 py-4 text-gray-800 lg:relative lg:mt-3 lg:h-[539px] lg:w-[392px] lg:justify-start lg:hover:scale-y-110"
+            class="plan group hidden w-[256px] flex-col justify-between rounded-lg border-2 border-blue-400 px-2 py-4 text-gray-800 sm:flex lg:relative lg:mt-3 lg:h-[539px] lg:w-[392px] lg:justify-start lg:hover:scale-y-110"
           >
             <span class="mb-1 text-2xl font-black lg:text-4xl">Teams</span>
             <span class="text-sm font-normal lg:text-lg"
@@ -736,6 +736,11 @@
               >Get Started</a
             >
           </div>
+        </div>
+        <div class="mt-5 flex gap-x-2 text-blue-300 sm:hidden">
+          <i class="fa-solid fa-circle btn-active" id="btn-10"></i>
+          <i class="fa-solid fa-circle" id="btn-11"></i>
+          <i class="fa-solid fa-circle" id="btn-12"></i>
         </div>
       </section>
     </main>
@@ -836,5 +841,13 @@
 
     <!-- burgerMenus script -->
     <script src="./dist/js/burgerMenus.js"></script>
+
+    <script src="./dist/js/plan-switching.js"></script>
+
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/82793a44a9.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

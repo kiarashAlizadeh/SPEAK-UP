@@ -24,4 +24,16 @@
   .shadow-pic {
     box-shadow: 9px -2px 20px 6px #00000057;
   }
+  .active-plan {
+    @apply flex;
+  }
+  .active-slider-btn {
+    @apply text-blue-800;
+  }
+  .plan {
+    @apply border-2;
+  }
+  .btn-active {
+    @apply text-blue-500 !important;
+  }
 }
