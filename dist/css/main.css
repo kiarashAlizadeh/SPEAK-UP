@@ -1168,10 +1168,6 @@ video {
   height: 40px;
 }
 
-.min-h-screen{
-  min-height: 100vh;
-}
-
 .w-16{
   width: 4rem;
 }
@@ -3601,16 +3597,8 @@ video {
     width: 72px;
   }
 
-  .sm\:flex-row{
-    flex-direction: row;
-  }
-
   .sm\:flex-col{
     flex-direction: column;
-  }
-
-  .sm\:flex-wrap{
-    flex-wrap: wrap;
   }
 
   .sm\:items-center{

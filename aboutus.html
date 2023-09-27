@@ -10,7 +10,7 @@
       href="./dist/icons/icon.svg"
       type="image/x-icon"
     />
-    <title>Sign Up</title>
+    <title>About Us</title>
   </head>
   <body class="font-Poppins">
     <header>
@@ -59,7 +59,9 @@
             >
           </li>
           <li>
-            <a class="text-sm hover:text-slate-400" href="#">About us</a>
+            <a class="nav-active text-sm hover:text-slate-400" href="#"
+              >About us</a
+            >
           </li>
         </ul>
         <div class="flex items-center md:gap-x-5">
@@ -90,7 +92,7 @@
             </a>
             <button class="navbar-close">
               <svg
-                class="h-6 w-6 cursor-pointer text-gray-400 hover:text-gray-500"
+                class="cu rsor-pointer h-6 w-6 text-gray-400 hover:text-gray-500"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -166,182 +168,39 @@
           </div>
         </nav>
       </div>
+      <div
+        class="w-full select-none bg-[#0B1E46] py-2 text-center text-[10px] text-yellow-400 lg:text-base"
+      >
+        Get 50% off SpeakUp Premium & unlock new language superpowers!
+      </div>
+      <section
+        class="flex w-full flex-col items-center justify-around bg-gradient-to-r from-[#2563EB] to-[#4FB3FF] px-6 py-7 lg:flex-row 2xl:-mb-14"
+      >
+        <div class="flex flex-col items-center text-white lg:items-start">
+          <span
+            class="mb-4 max-w-xl text-center text-2xl font-black lg:text-start lg:text-5xl"
+          >
+            Studying Online is now much easier
+          </span>
+          <span class="mb-4 max-w-[510px] text-center lg:text-start">
+            Speak Up is an interesting platform that will teach you in more an
+            interactive way
+          </span>
+          <button
+            class="mb-5 w-fit select-none rounded-lg bg-yellow-500 px-4 py-2 lg:mb-0"
+          >
+            Let’s start
+          </button>
+        </div>
+        <img
+          src="./dist/images/home/rafiki.svg"
+          alt=""
+          class="select-none lg:h-[536px]"
+          draggable="false"
+        />
+      </section>
     </header>
 
-    <main>
-      <!-- sign up -->
-      <section
-        class="mx-auto mb-10 mt-3 flex w-fit select-none flex-col items-center justify-center rounded-lg bg-blue-100 md:mb-10 md:mt-3 md:h-[672px] md:flex-row md:items-center"
-      >
-        <div class="relative">
-          <img
-            src="./dist/images/signup.svg"
-            alt="sign up"
-            class="mt-16 w-full sm:w-[645px] sm:rounded-l-lg"
-            draggable="false"
-          />
-          <span
-            class="absolute left-0 top-5 text-center text-xl text-slate-600 sm:left-12 sm:top-12 sm:w-[138px] sm:text-start md:w-[197px]"
-            >Welcome, Looks like you’re new here!</span
-          >
-        </div>
-
-        <div
-          class="mb-10 flex flex-col items-start rounded-lg bg-blue-100 px-10 sm:mt-0 sm:bg-none lg:mx-24 lg:mb-0 lg:h-full lg:py-10"
-        >
-          <form action="" class="flex flex-col items-start gap-y-4">
-            <h1 class="text-3xl font-black sm:text-5xl">Sign Up</h1>
-            <span class="flex w-full flex-col">
-              <label for="email" class="text-gray-600">Full Name</label>
-              <input
-                type="text"
-                id="fname"
-                name="fname"
-                class="text-md block w-full rounded-lg border-2 border-gray-300 bg-white px-3 py-2 placeholder-gray-500 shadow-md focus:border-gray-400 focus:bg-white focus:placeholder-gray-400 focus:outline-none"
-                placeholder="Enter your name"
-              />
-            </span>
-            <span class="flex w-full flex-col">
-              <label for="tel" class="text-gray-600">Mobile Number</label>
-              <input
-                type="tel"
-                id="tel"
-                name="tel"
-                class="text-md block w-full rounded-lg border-2 border-gray-300 bg-white px-3 py-2 placeholder-gray-500 shadow-md focus:border-gray-400 focus:bg-white focus:placeholder-gray-400 focus:outline-none"
-                placeholder="Enter your Mobile Number"
-              />
-            </span>
-            <span class="flex w-full flex-col">
-              <label for="email" class="text-gray-600">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                class="text-md block w-full rounded-lg border-2 border-gray-300 bg-white px-3 py-2 placeholder-gray-500 shadow-md focus:border-gray-400 focus:bg-white focus:placeholder-gray-400 focus:outline-none"
-                placeholder="Enter your Email"
-              />
-            </span>
-            <span class="flex w-full flex-col" x-data="{ show: true }">
-              <label for="password" class="text-gray-600">Password</label>
-              <div class="relative">
-                <input
-                  placeholder="Enter your Password"
-                  :type="show ? 'password' : 'text'"
-                  class="text-md block w-full rounded-lg border-2 border-gray-300 bg-white px-3 py-2 placeholder-gray-500 shadow-md focus:border-gray-400 focus:bg-white focus:placeholder-gray-400 focus:outline-none"
-                />
-                <div
-                  class="absolute inset-y-0 right-0 flex items-center pr-3 text-sm leading-5"
-                >
-                  <svg
-                    class="h-6 cursor-pointer text-gray-500 hover:text-gray-700"
-                    fill="none"
-                    @click="show = !show"
-                    :class="{'hidden': !show, 'block':show }"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewbox="0 0 576 512"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"
-                    ></path>
-                  </svg>
-
-                  <svg
-                    class="h-6 cursor-pointer text-gray-500 hover:text-gray-700"
-                    fill="none"
-                    @click="show = !show"
-                    :class="{'block': !show, 'hidden':show }"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewbox="0 0 640 512"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M320 400c-75.85 0-137.25-58.71-142.9-133.11L72.2 185.82c-13.79 17.3-26.48 35.59-36.72 55.59a32.35 32.35 0 0 0 0 29.19C89.71 376.41 197.07 448 320 448c26.91 0 52.87-4 77.89-10.46L346 397.39a144.13 144.13 0 0 1-26 2.61zm313.82 58.1l-110.55-85.44a331.25 331.25 0 0 0 81.25-102.07 32.35 32.35 0 0 0 0-29.19C550.29 135.59 442.93 64 320 64a308.15 308.15 0 0 0-147.32 37.7L45.46 3.37A16 16 0 0 0 23 6.18L3.37 31.45A16 16 0 0 0 6.18 53.9l588.36 454.73a16 16 0 0 0 22.46-2.81l19.64-25.27a16 16 0 0 0-2.82-22.45zm-183.72-142l-39.3-30.38A94.75 94.75 0 0 0 416 256a94.76 94.76 0 0 0-121.31-92.21A47.65 47.65 0 0 1 304 192a46.64 46.64 0 0 1-1.54 10l-73.61-56.89A142.31 142.31 0 0 1 320 112a143.92 143.92 0 0 1 144 144c0 21.63-5.29 41.79-13.9 60.11z"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-            </span>
-            <span class="flex w-full flex-col" x-data="{ show: true }">
-              <label for="password" class="text-gray-600"
-                >Re Enter Password</label
-              >
-              <div class="relative">
-                <input
-                  placeholder="Re Enter Password"
-                  :type="show ? 'password' : 'text'"
-                  class="text-md block w-full rounded-lg border-2 border-gray-300 bg-white px-3 py-2 placeholder-gray-500 shadow-md focus:border-gray-400 focus:bg-white focus:placeholder-gray-400 focus:outline-none"
-                />
-                <div
-                  class="absolute inset-y-0 right-0 flex items-center pr-3 text-sm leading-5"
-                >
-                  <svg
-                    class="h-6 cursor-pointer text-gray-500 hover:text-gray-700"
-                    fill="none"
-                    @click="show = !show"
-                    :class="{'hidden': !show, 'block':show }"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewbox="0 0 576 512"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z"
-                    ></path>
-                  </svg>
-
-                  <svg
-                    class="h-6 cursor-pointer text-gray-500 hover:text-gray-700"
-                    fill="none"
-                    @click="show = !show"
-                    :class="{'block': !show, 'hidden':show }"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewbox="0 0 640 512"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M320 400c-75.85 0-137.25-58.71-142.9-133.11L72.2 185.82c-13.79 17.3-26.48 35.59-36.72 55.59a32.35 32.35 0 0 0 0 29.19C89.71 376.41 197.07 448 320 448c26.91 0 52.87-4 77.89-10.46L346 397.39a144.13 144.13 0 0 1-26 2.61zm313.82 58.1l-110.55-85.44a331.25 331.25 0 0 0 81.25-102.07 32.35 32.35 0 0 0 0-29.19C550.29 135.59 442.93 64 320 64a308.15 308.15 0 0 0-147.32 37.7L45.46 3.37A16 16 0 0 0 23 6.18L3.37 31.45A16 16 0 0 0 6.18 53.9l588.36 454.73a16 16 0 0 0 22.46-2.81l19.64-25.27a16 16 0 0 0-2.82-22.45zm-183.72-142l-39.3-30.38A94.75 94.75 0 0 0 416 256a94.76 94.76 0 0 0-121.31-92.21A47.65 47.65 0 0 1 304 192a46.64 46.64 0 0 1-1.54 10l-73.61-56.89A142.31 142.31 0 0 1 320 112a143.92 143.92 0 0 1 144 144c0 21.63-5.29 41.79-13.9 60.11z"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-            </span>
-            <div>
-              <span>
-                <input
-                  type="checkbox"
-                  id="Remember"
-                  name="Remember"
-                  value="Remember Me"
-                  class="cursor-pointer"
-                />
-                <label
-                  for="Remember"
-                  class="cursor-pointer text-gray-600 hover:text-gray-900"
-                  >Remember Me
-                </label>
-                <br />
-              </span>
-              <input
-                type="submit"
-                value="Sign Up"
-                class="mt-3 h-8 w-[301px] cursor-pointer rounded-lg bg-blue-500 px-2 text-white hover:bg-blue-700"
-              />
-            </div>
-          </form>
-          <span class="mt-4"
-            >Already have an account? &nbsp
-            <a
-              href="./signin.html"
-              class="border-b-2 border-transparent text-blue-500 hover:border-gray-400"
-            >
-              Sign in</a
-            ></span
-          >
-        </div>
-      </section>
-    </main>
-
-    <!-- footer -->
     <footer
       class="flex w-full select-none flex-col bg-gradient-to-b from-primary to-dark-primary py-5 text-white"
     >
@@ -435,13 +294,14 @@
         </div>
       </div>
     </footer>
+
     <!-- burgerMenus script -->
     <script src="./dist/js/burgerMenus.js"></script>
 
-    <!-- password eye -->
+    <!-- fontawesome -->
     <script
-      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"
-      defer
+      src="https://kit.fontawesome.com/82793a44a9.js"
+      crossorigin="anonymous"
     ></script>
   </body>
 </html>
