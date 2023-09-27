@@ -7,11 +7,11 @@
   .nav-active {
     @apply text-base font-black text-primary hover:text-primary/60 !important;
   }
-  * {
+  /* * {
     @media only screen and (max-width: 386px) {
       overflow-x: hidden;
     }
-  }
+  } */
   .input {
     @apply rounded-lg border-2 border-gray-300 bg-white px-3 py-2 text-sm placeholder-gray-500 shadow-md focus:border-gray-400 focus:bg-white focus:placeholder-gray-400 focus:outline-none;
   }
