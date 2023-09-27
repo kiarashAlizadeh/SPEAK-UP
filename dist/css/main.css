@@ -1168,6 +1168,10 @@ video {
   height: 40px;
 }
 
+.h-screen{
+  height: 100vh;
+}
+
 .w-16{
   width: 4rem;
 }
