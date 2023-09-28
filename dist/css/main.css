@@ -2454,17 +2454,13 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-white\/75{
-  background-color: rgb(255 255 255 / 0.75);
+.bg-white\/90{
+  background-color: rgb(255 255 255 / 0.9);
 }
 
 .bg-yellow-500{
   --tw-bg-opacity: 1;
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
-}
-
-.bg-white\/90{
-  background-color: rgb(255 255 255 / 0.9);
 }
 
 .bg-gradient-to-b{
