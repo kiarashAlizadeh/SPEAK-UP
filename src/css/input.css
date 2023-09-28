@@ -3,15 +3,35 @@
 @tailwind components;
 @tailwind utilities;
 
+/* width */
+::-webkit-scrollbar {
+  @apply w-4;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-gray-300;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply rounded-md bg-primary/60;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary;
+}
+
+/* * {
+  @media only screen and (max-width: 386px) {
+    overflow-x: hidden;
+  }
+} */
 @layer components {
   .nav-active {
     @apply text-base font-black text-primary hover:text-primary/60 !important;
   }
-  /* * {
-    @media only screen and (max-width: 386px) {
-      overflow-x: hidden;
-    }
-  } */
   .input {
     @apply rounded-lg border-2 border-gray-300 bg-white px-3 py-2 text-sm placeholder-gray-500 shadow-md focus:border-gray-400 focus:bg-white focus:placeholder-gray-400 focus:outline-none;
   }
