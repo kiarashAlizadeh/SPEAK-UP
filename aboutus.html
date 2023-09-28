@@ -14,10 +14,10 @@
     <title>About Us</title>
   </head>
   <body class="flex h-screen flex-col justify-between font-Poppins">
-    <header>
+    <header class="sticky top-0 z-50">
       <!-- navBar with burger menu -->
       <nav
-        class="relative flex select-none items-center justify-between gap-x-2 bg-white px-4 py-4"
+        class="relative flex select-none items-center justify-between gap-x-2 bg-white/90 px-4 py-4"
       >
         <div class="lg:hidden">
           <button class="navbar-burger flex items-center p-3 text-blue-600">
@@ -47,7 +47,11 @@
           class="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 transform lg:mx-auto lg:flex lg:w-auto lg:items-center lg:space-x-6"
         >
           <li>
-            <a class="text-sm hover:text-slate-400" href="./index.html">Home</a>
+            <a
+              class="nav-active text-sm hover:text-slate-400"
+              href="./index.html"
+              >Home</a
+            >
           </li>
           <li>
             <a class="text-sm hover:text-slate-400" href="./courses.html"
@@ -60,16 +64,14 @@
             >
           </li>
           <li>
-            <a
-              class="nav-active text-sm hover:text-slate-400"
-              href="./aboutus.html"
+            <a class="text-sm hover:text-slate-400" href="./aboutus.html"
               >About us</a
             >
           </li>
         </ul>
         <div class="flex items-center md:gap-x-5">
           <a
-            class="rounded-xl bg-gray-50 py-2 text-sm font-bold text-gray-900 transition duration-200 hover:bg-slate-200 lg:ml-auto lg:mr-3"
+            class="rounded-xl py-2 text-sm font-bold text-gray-900 transition duration-200 hover:bg-slate-200 lg:ml-auto lg:mr-3"
             href="./signin.html"
             ><img src="./dist/icons/nav/user.svg " alt="user" draggable="false"
           /></a>
